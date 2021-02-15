@@ -182,9 +182,7 @@ def gene_cmr(R,pal,shop_pal):
             
             document.save('C:/Users/Utilisateur/Documents/FNAC_VDB/Projet_expe/CMR_expé_shop_'+str(num)+date_CMR+'.docx')
             
-            #document.save('C:/Users/Utilisateur/Documents/FNAC_VDB/Projet_expe/TESSSST.docx')
-            # document.save('‪C:/Users/Utilisateur/Documents/FNAC_VDB/Projet_expe/cmr_print/CMR_expé_shop_'+str(num)+date_CMR+'.docx')
-            
+        
             #on copie le cmr dans un dossier tampon pour l'impression
             filePath = shutil.copy('CMR_expé_shop_'+str(num)+date_CMR+'.docx','C:/Users/Utilisateur/Documents/FNAC_VDB/Projet_expe/cmr_print/')
             

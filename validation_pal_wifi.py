@@ -133,7 +133,7 @@ def is_fin_scan(tmp):
     return(False)
 
 def is_correction(tmp):
-    if tmp == 3:
+    if tmp == 0:
         return(True)
     return(False)
 
@@ -153,7 +153,7 @@ def is_apm(tmp):
     return(False)      
 
 def is_dacem(tmp):
-    if tmp == 0:
+    if tmp == 33:
         return(True)
     return(False)
 
@@ -356,7 +356,7 @@ def rec_name(event):
             
             #on scan un barcode "correction"
             elif correction[-1]:
-                '''version où on doit scanner un shop avant de scanner une palette'''
+                '''version où on doit scanner un shop avant de scanner une palette pour la corriger'''
                 # Button(w, text ='Ok !', width = 30).grid(row = 2,column = 7)
                 # num_idx = list_idx[-1]
                 # if tmp in R[shop_plan[num_idx]]:
@@ -368,7 +368,7 @@ def rec_name(event):
                 # Button(w,text = str(pal[shop_plan[num_idx]][idx2]),bg = "white", width = 30).grid(row = idx2+2,column = num_idx)
                 # entree.delete(0,END)
                 
-                '''Version où on peut scanner directement la palette'''
+                '''Version où on peut scanner directement la palette pour la corriger'''
                 verif = True
                 Button(w, text ='Ok !', width = 30).grid(row = 2,column = 7)
                 #on doit retrouver la palette et le shop correspondant
